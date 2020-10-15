@@ -1,0 +1,18 @@
+1.SELECT name As STAFF_NAME FROM staffs
+2.SELECT DISTINCT department_id FROM staffs
+3.SELECT * FROM staffs ORDER BY name
+4.SELECT * FROM staffs ORDER By name ASC
+   SELECT * FROM staffs ORDER BY department_id DESC
+5.SELECT * FROM staffs WHERE name='Kay Thwe' AND name='Thae Su Wai'
+
+7.SELECT * FROM staffs WHERE name LIKE '%a%'
+8.SELECT * FROM staffs WHERE name LIKE '%e'
+9.SELECT * FROM staffs WHERE salary BETWEEN 100000 AND 500000
+10.SELECT * FROM staffs WHERE joindate LIKE '%02%'
+11.SELECT COUNT(*) as totalstaff FROM staffs WHERE department_id='6'
+12.
+13.SELECT * FROM staffs LIMIT 5
+14. SELECT MAX(salary) as largestsalary FROM staffs
+15.SELECT SUM(salary) as totalsalaries FROM staffs
+16.SELECT * FROM staffs INNER JOIN bonus WHERE staffs.id=bonus.staff_id AND bonus.bonusdate='2016-02-20'
+17.SELECT * FROM staffs INNER JOIN bonus WHERE staffs.id=bonus.staff_id AND bonus.bonusdate='2016-02-20' AND staffs.name='Aye Aye'
